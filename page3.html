@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="page3.css">
+    <title>TRAIN FARE GUIDE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #F2F2F2;
+            background-repeat: no-repeat;
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+
+        h1, h2, h3, h4, h5, p {
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn {
+        background-color: #011C40;
+        color: #FFFFFF;
+        font-weight: bold;
+        transition: 0.5 ease;
+        }
+
+        .btn:hover {
+        background-color: #4C565E;
+        color: #FFFFFF;
+        font-weight: bold;
+        transition: 0.5 ease;
+        }
+
+        .container-form {
+        background-color: #F26716;
+        color: #F2F2F2;
+        padding: 45px 95px;
+        }
+
+        .select {
+        border: 3px;
+        border-radius: 3px;
+        }
+
+        .select:hover{
+        background-color: #F5DCD3;
+        border: 3px;
+        border-radius: 3px;
+        }
+    </style>
+
+    <!-- FUNCTIONS -->
+    <script>
+        function Reset() {
+        confirm("Your form was successfully reset and cleared!")
+        }
+    </script>
+</head>
+
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" style="color: #FFFFFF; font-family: Montserrat; font-size: 24px;" target="_self"><img class="img-responsive" src="logo.png" style="width: 50px; padding: 5px;">InfiniTrain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Transit Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Contact Us</a>
+                    </li>    
+                </ul>
+                <br>
+                <ul class="navbar-nav navbar-center navbar-expand-lg ms-auto">
+                    <div class="navbar-search">
+                        <input type="type=text" placeholder="Search" name="search">
+                        <button>Search</button>
+                    </div>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+<br>
+
+<!-- HEADER -->
+<div class="header">
+    <h3>Feedback Form</h3>        
+</div>
+<br>
+
+<!-- FORM -->
+<form class="container-form container-fluid" style="font-size: 14px">
+
+<div class="comment">
+    <h2>Leave a comment</h2>
+    <p>Enjoyed the ride? Have some concerns? Feel free to contact us.</p>
+</div>
+<br>
+
+<div class="feedback">
+    <h5>Feedback</h5>
+    <textarea class="form-control" id="textarea" name="textarea" rows="5" placeholder="Input your feeback here." required></textarea><br>
+</div>
+<br>
+
+<div class="name">
+    <h5>Name</h5>
+    <textarea class="form-control" id="textarea" name="textarea" rows="1" placeholder="Input your name here." required></textarea><br>
+</div>
+<br>
+
+<div class="email">
+    <h5>Email</h5>
+    <textarea class="form-control" id="textarea" name="textarea" rows="1" placeholder="Input your email here." required></textarea><br>
+</div>
+<br>
+
+<div class="submission">
+    <button class="btn" onclick="Reset()" type="reset">Reset</button>
+    <button class="btn" type="submit">Submit Feedback</button>
+</div>
+</form>
+<br>
+
+<!-- FOOTER -->
+<div class="footer" style="padding: 15px">
+    <h3>Need help?</h3>  
+    <p>For any assistance, feel free to contact us.</p>
+    <p>Our office: MacArthur Highway, Angeles City, Pampanga</p>
+    <p>@InfiniTrain</p>
+    <a href="https://docs.google.com/document/d/1jJGLJMqjxKwAYvw8T5UBqPFjqfOAUzmgatK-l4necqQ/edit?usp=sharing" target="_blank">References</a>
+</div>
+</body>
+</html>
